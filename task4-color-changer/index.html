@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dynamic Color Changer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <h1 id="main-heading">Click the Button to Change Background Color</h1>
+
+    <div class="panel">
+      <button id="change-btn" class="btn" aria-describedby="color-info">Change Color</button>
+
+      <div id="color-info" class="color-info" aria-live="polite">
+        <div class="color-swatch" id="color-swatch" aria-hidden="true"></div>
+        <div class="color-text">
+          <div><strong>Color:</strong> <span id="color-code">#FFFFFF</span></div>
+          <div><strong>Name/Hint:</strong> <span id="color-name">White</span></div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="copy-btn" class="small-btn" title="Copy color code">Copy Code</button>
+        <button id="random-named-btn" class="small-btn" title="Pick from named colors">Named Color</button>
+      </div>
+
+      <p class="note">Tip: Click "Copy Code" to copy the HEX value to your clipboard.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
