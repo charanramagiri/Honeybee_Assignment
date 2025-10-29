@@ -12,20 +12,24 @@
 
     <form id="task-form" class="task-form" autocomplete="off">
       <input id="task-input" type="text" placeholder="Add a new task..." required />
-      <button id="add-btn" type="submit">Add</button>
+  <button id="add-btn" type="submit">➕ Add</button>
     </form>
 
     <div class="controls">
       <div id="task-count">Total: 0</div>
       <div class="filters">
-        <button data-filter="all" class="filter active">All</button>
-        <button data-filter="active" class="filter">Active</button>
-        <button data-filter="completed" class="filter">Completed</button>
+  <button data-filter="all" class="filter active">📋 All</button>
+  <button data-filter="active" class="filter">📝 Active</button>
+  <button data-filter="completed" class="filter">✅ Completed</button>
       </div>
-      <button id="clear-completed" class="clear-btn">Clear Completed</button>
+  <button id="clear-completed" class="clear-btn">🧹 Clear Completed</button>
     </div>
 
     <ul id="task-list" class="task-list" aria-live="polite"></ul>
+    <div id="empty-state" style="display:none;text-align:center;color:var(--muted);margin-top:18px;font-size:1.1rem;">
+      <span style="font-size:2.2rem;display:block;">🎉</span>
+      All done! Add a new task above.
+    </div>
   </main>
 
   <script src="script.js"></script>

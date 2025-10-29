@@ -26,12 +26,11 @@ function render() {
     return true;
   });
 
+  const emptyState = document.getElementById('empty-state');
   if (filtered.length === 0) {
-    const p = document.createElement('p');
-    p.textContent = 'No tasks yet. Add your first task!';
-    p.style.color = '#6b7280';
-    taskList.appendChild(p);
+    emptyState.style.display = 'block';
   } else {
+    emptyState.style.display = 'none';
     filtered.forEach(task => {
       const li = document.createElement('li');
       li.className = 'task-item';
@@ -59,7 +58,7 @@ function render() {
 
       const del = document.createElement('button');
       del.className = 'delete-btn';
-      del.textContent = 'Delete';
+      del.innerHTML = '🗑️';
       del.setAttribute('aria-label', 'Delete task');
 
       actions.appendChild(del);
