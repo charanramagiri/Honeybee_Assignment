@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Your Name</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card" role="main">
+    <header class="profile">
+      <img src="profile.jpg" alt="Your Name — profile picture" class="avatar" id="profile-pic" />
+      <div class="meta">
+        <h1 id="name">Your Name</h1>
+        <p id="bio">A short bio — student / web developer / interested in frontend & backend. Keep it to 1–2 lines.</p>
+        <div class="contact-row">
+          <a class="btn contact-btn" id="contact-btn" href="mailto:your.email@example.com?subject=Hello%20from%20Portfolio">Contact</a>
+          <button class="btn-outline" id="download-cv">Download CV</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="skills-section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="skills-grid" id="skills-grid" aria-live="polite">
+        <li class="skill">HTML</li>
+        <li class="skill">CSS</li>
+        <li class="skill">JavaScript</li>
+        <li class="skill">React</li>
+        <li class="skill">Node.js</li>
+        <li class="skill">MySQL</li>
+      </ul>
+    </section>
+
+    <section class="extra" aria-label="extra info">
+      <h3>Projects / Quick links</h3>
+      <div class="links">
+        <a href="#" class="chip">Project 1</a>
+        <a href="#" class="chip">Project 2</a>
+        <a href="#" class="chip">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
