@@ -74,8 +74,10 @@ function applyColor(color) {
   // set readable text color for the UI
   const light = isLight(hex);
   const textColor = light ? '#111' : '#fff';
-  colorNameEl.style.color = textColor;
-  colorCodeEl.style.color = textColor;
+  // Do NOT override the color of the displayed value text (hex and name/hint).
+  // Clear any inline color previously set so these elements use their CSS-defined color.
+  colorNameEl.style.color = '';
+  colorCodeEl.style.color = '';
   colorSwatch.style.borderColor = light ? 'rgba(0,0,0,0.08)' : 'rgba(255,255,255,0.12)';
 
   // simple "name/hint" — if passed color is a named CSS color show name; else show hint
