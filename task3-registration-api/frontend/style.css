@@ -1,0 +1,7 @@
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#f3f4f6;padding:24px}
+.container{max-width:420px;margin:0 auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+label{display:block;margin-bottom:12px;font-size:0.95rem}
+input{width:100%;padding:8px;border:1px solid #e6e9ef;border-radius:6px;margin-top:6px}
+button{padding:10px 14px;background:#2563eb;color:#fff;border:none;border-radius:6px;cursor:pointer;margin-top:8px}
+#msg{margin-top:12px;font-weight:600}
