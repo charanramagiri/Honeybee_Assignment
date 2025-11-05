@@ -1,18 +1,55 @@
-# Honeybee Digital — Web Dev Assignment
-Candidate: Charan Ramagiri
+# Honeybee Digital – Web Development Internship Assignment
 
-## Quick Summary
-- Task 1: Responsive Portfolio — open `task1-portfolio/index.html`
-- Task 2: To-Do App — open `task2-todo-app/index.html`
-- Task 3: Registration API — backend in `task3-registration-api/backend`, frontend in `task3-registration-api/frontend`
-  - DB SQL: `backend-sql/db-setup.sql`
-  - Use `.env.example` to configure `.env` locally (do not include real .env)
-- Task 4: Dynamic Color Changer — open `task4-color-changer/index.html`
+**Candidate:** Charan Ramagiri  
+**Email:** your.email@example.com  
+**Date Submitted:** November 2025  
 
-## How to run (quick)
-- Static pages: open `index.html` in the task folder (or serve via simple static server).
-- Backend (Task 3):
-  1. `cd task3-registration-api/backend`
-  2. `npm install`
-  3. copy `.env.example` → `.env` and fill DB creds
-  4. `node server.js`
+---
+
+## 📂 Project Overview
+This repository contains the 4 tasks assigned by Honeybee Digital to evaluate frontend and backend development skills.  
+Each task is self-contained and has its own `README.md` explaining specific details and how to run it.
+
+Folder structure:
+
+```
+Honeybee_Assignment/
+│
+├── task1-portfolio/ → Responsive Portfolio Section (HTML + CSS + JS)
+├── task2-todo-app/ → To-Do List App (Vanilla JS)
+├── task3-registration-api/ → User Registration & Validation API (Node.js + MySQL)
+├── task4-color-changer/ → Dynamic Color Changer (HTML + CSS + JS)
+├── screenshots/ → Screenshots / demo GIFs
+├── demos.txt → (optional) live demo links & credentials
+└── README.md → You are here
+```
+
+
+
+### 🧾 Database Details
+- Database: honeybee_assignment
+- Use the script `task3-registration-api/backend/db-setup.sql` to create tables.
+- Credentials configured through `.env` file (example provided as .env).
+
+### 🖼️ Screenshots
+Screenshots of each task are stored in /screenshots.
+
+### 💡 Technologies Used
+- Frontend: HTML, CSS, JavaScript
+- Backend: Node.js, Express.js, MySQL, bcrypt, dotenv, CORS
+- Tools: VS Code, npm, MySQL Workbench, Git
+
+### 🚀 How to Test Quickly
+
+| Task | Command / Action |
+| ---- | ---------------- |
+| Task 1 | Open index.html |
+| Task 2 | Open index.html |
+| Task 3 | npm install → node server.js → open frontend |
+| Task 4 | Open index.html |
+
+### 🧠 Key Learning & Improvements
+- Practiced responsive layouts using Flexbox + Grid
+- Strengthened DOM manipulation and localStorage handling
+- Implemented API validation, hashing, and DB storage securely
+- Learned to organize full-stack project structure professionally
