@@ -1,8 +1,7 @@
 # Honeybee Digital – Web Development Internship Assignment
 
 **Candidate:** Charan Ramagiri  
-**Email:** your.email@example.com  
-**Date Submitted:** November 2025  
+**Email:** charanramagiri2004@gmail.com   
 
 ---
 
